@@ -204,6 +204,7 @@ with col_r:
 
 qs = st.session_state.questions
 if qs:
+    # Navigation bar
     nav1, nav2, nav3, nav4 = st.columns([1, 1, 1, 3])
     if nav1.button("⟵ Previous", disabled=st.session_state.current_idx == 0):
         st.session_state.current_idx -= 1
@@ -217,6 +218,19 @@ if qs:
         if st.button("Submit Exam", type="secondary"):
             st.session_state["submitted"] = True
 
+    # Jump to Question (compact input box)
+    with st.expander("Jump to Question"):
+        col1, col2 = st.columns([1, 4])  # small input, big button
+        with col1:
+            jump_to = st.text_input("QID", placeholder="e.g. A33, B69, Q2", label_visibility="collapsed")
+        with col2:
+            if st.button("Go"):
+                for i, q in enumerate(qs):
+                    if q["qid"].lower() == jump_to.lower().strip():
+                        st.session_state.current_idx = i
+                        break
+
+    # Display current question
     idx = st.session_state.current_idx
     q = qs[idx]
     st.markdown(f"**{q['qid']}**  \n{q['question']}")
