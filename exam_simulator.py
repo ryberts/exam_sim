@@ -10,7 +10,7 @@ try:
 except Exception:
     PDF_OK = False
 
-st.set_page_config(page_title="Exam Simulator", layout="wide")
+st.set_page_config(page_title="Gambare!", layout="wide")
 
 # ---------------------------
 # Utilities: parsing helpers
@@ -196,7 +196,7 @@ with col_l:
             st.success(f"Parsed {len(qs)} questions.")
 
 with col_r:
-    st.markdown("### Exam Simulator")
+    st.markdown("### You Shall Pass!")
 
 # ---------------------------
 # Exam view / navigation
