@@ -329,7 +329,7 @@ else:
 # ---------------------------
 # Tips
 # ---------------------------
-with st.expander("Tips for best parsing results"):
+with st.expander("tips for best parsing results"):
     st.markdown("""
 - Supported question headers: **`Question N.`** or **`A##.` / `B##.`**
 - Supported options: `(A) Something...`, `A. Something...`, etc.
