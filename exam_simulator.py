@@ -327,7 +327,7 @@ else:
     st.info("Paste/upload questions on the left, then click **Parse Questions**.")
 
 # ---------------------------
-# Tips
+# Tips test
 # ---------------------------
 # with st.expander("tips for best parsing results"):
 #    st.markdown("""
