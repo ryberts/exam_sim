@@ -329,13 +329,13 @@ else:
 # ---------------------------
 # Tips
 # ---------------------------
-with st.expander("tips for best parsing results"):
-    st.markdown("""
-- Supported question headers: **`Question N.`** or **`A##.` / `B##.`**
-- Supported options: `(A) Something...`, `A. Something...`, etc.
-- Misaligned case from PDFs is handled.
-- Upload an **answer_key.csv** with columns: `qid,correct`  
-  - Single answer: `Q12,A`  
-  - Multi-answer: `Q13,E,F,G`
-- Shuffle option remaps answers correctly.
-""")
+# with st.expander("tips for best parsing results"):
+#    st.markdown("""
+#- Supported question headers: **`Question N.`** or **`A##.` / `B##.`**
+#- Supported options: `(A) Something...`, `A. Something...`, etc.
+#- Misaligned case from PDFs is handled.
+#- Upload an **answer_key.csv** with columns: `qid,correct`  
+#  - Single answer: `Q12,A`  
+#  - Multi-answer: `Q13,E,F,G`
+#- Shuffle option remaps answers correctly.
+#""")
