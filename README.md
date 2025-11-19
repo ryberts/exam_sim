@@ -63,3 +63,38 @@ Upload this file in the sidebar before submitting your exam.
 ## Question Format Tips
 
 For best parsing results, format your questions like:
+
+---
+Question 1.
+What is the capital of France?
+(A) London
+(B) Berlin
+(C) Paris
+(D) Madrid
+
+A2.
+Which colors are in the French flag?
+A. Red
+B. Blue
+C. White
+D. Green
+
+---
+
+Supported formats:
+- Question headers: `Question N.` or `A##./B##.`
+- Options: `(A) Text`, `A. Text`, `A) Text`
+
+---
+
+## Installation (For Local Development)
+
+```bash
+git clone <repository-url>
+cd exam-simulator
+pip install -r requirements.txt
+streamlit run exam_simulator.py
+---
+
+The app is deployed on Streamlit Community Cloud and accessible at:
+https://ryanexamsim.streamlit.app/
