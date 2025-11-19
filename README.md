@@ -95,6 +95,3 @@ cd exam-simulator
 pip install -r requirements.txt
 streamlit run exam_simulator.py
 ---
-
-The app is deployed on Streamlit Community Cloud and accessible at:
-https://ryanexamsim.streamlit.app/
